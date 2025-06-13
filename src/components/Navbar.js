@@ -66,12 +66,12 @@ const Navbar = ({ currentLanguage = 'en', setLanguage }) => {
             <Link href="/leadership" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
               {t.leadership}
             </Link>
-            <Link href="/achievements" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
+            {/* <Link href="/achievements" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
               {t.achievements}
             </Link>
             <Link href="/news" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
               {t.news}
-            </Link>
+            </Link> */}
             <Link href="/contact" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
               {t.contact}
             </Link>
@@ -121,12 +121,12 @@ const Navbar = ({ currentLanguage = 'en', setLanguage }) => {
             <Link href="/leadership" className="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
               {t.leadership}
             </Link>
-            <Link href="/achievements" className="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
+            {/* <Link href="/achievements" className="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
               {t.achievements}
             </Link>
             <Link href="/news" className="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
               {t.news}
-            </Link>
+            </Link> */}
             <Link href="/contact" className="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
               {t.contact}
             </Link>

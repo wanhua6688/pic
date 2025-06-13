@@ -41,9 +41,9 @@ const translations = {
       "\"Policy innovation requires merging scientists' microscopes, entrepreneurs' telescopes, and policymakers' wide-angle lenses.\"",
     executiveCommittee: "Executive Committee",
     chiefScientist:
-      "Chief Scientist: Hiromi Nakamura (ex-RIKEN), led iPS cell ethics guidelines.",
+      "Chief Scientist: Hiromi (ex-RIKEN), led iPS cell ethics guidelines.",
     industryLiaison:
-      "Industry Liaison: Masataka Ito (ex-Mitsui), drives technology-business-policy value loops.",
+      "Industry Liaison: Masataka  (ex-Mitsui), drives technology-business-policy value loops.",
 
     // Operational DNA section
     operationalTitle: "Operational DNA",
@@ -111,9 +111,9 @@ const translations = {
       "「政策イノベーションには、科学者の顕微鏡、起業家の望遠鏡、政策立案者の広角レンズの融合が必要である」",
     executiveCommittee: "執行委員会",
     chiefScientist:
-      "主席科学者：中村博美（元理化学研究所）、iPS細胞倫理ガイドラインを主導",
+      "主席科学者：博美（元理化学研究所）、iPS細胞倫理ガイドラインを主導",
     industryLiaison:
-      "産業連携担当：伊藤正隆（元三井物産）、技術・ビジネス・政策の価値循環を推進",
+      "産業連携担当：正隆（元三井物産）、技術・ビジネス・政策の価値循環を推進",
 
     // Operational DNA section
     operationalTitle: "運営DNA",

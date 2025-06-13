@@ -18,7 +18,7 @@ const translations = {
     establishedContent: "2022, Tokyo",
     supported: "Supported by",
     supportedContent:
-      "Japanese Cabinet Office, Ministry of Education, Culture, Sports, Science and Technology (MEXT), and Ministry of Economy, Trade and Industry (METI).",
+      "Supported by collaborative partnerships with Japanese public institutions",
     mission: "Mission",
     missionContent:
       "Build a trinity innovation cycle integrating policy-technology-industry to address Japan's core societal challenges:",
@@ -33,9 +33,9 @@ const translations = {
     leadershipTitle: "Leadership & Governance",
     chairperson: "Chairperson",
     chairpersonName: "Ryunosuke Takahashi",
-    background: "Background",
-    backgroundContent:
-      "Former METI Director-General; PhD in Social Systems Engineering, Kyoto University; architect of the Society 5.0 strategy.",
+    // background: "Background",
+    // backgroundContent:
+    //   "Former METI Director-General; PhD in Social Systems Engineering, Kyoto University; architect of the Society 5.0 strategy.",
     philosophy: "Philosophy",
     philosophyContent:
       "\"Policy innovation requires merging scientists' microscopes, entrepreneurs' telescopes, and policymakers' wide-angle lenses.\"",
@@ -88,7 +88,7 @@ const translations = {
     established: "設立",
     establishedContent: "2022年、東京",
     supported: "支援",
-    supportedContent: "内閣府、文部科学省（MEXT）、経済産業省（METI）",
+    supportedContent: "日本の公共機関との協力提携による支援",
     mission: "ミッション",
     missionContent:
       "政策・技術・産業を統合する三位一体のイノベーションサイクルを構築し、日本の主要な社会課題に対応する：",
@@ -103,9 +103,9 @@ const translations = {
     leadershipTitle: "リーダーシップとガバナンス",
     chairperson: "議長",
     chairpersonName: "高橋龍之介",
-    background: "経歴",
-    backgroundContent:
-      "元METI事務次官；京都大学社会システム工学博士；Society 5.0戦略の設計者。",
+    // background: "経歴",
+    // backgroundContent:
+    //   "元METI事務次官；京都大学社会システム工学博士；Society 5.0戦略の設計者。",
     philosophy: "哲学",
     philosophyContent:
       "「政策イノベーションには、科学者の顕微鏡、起業家の望遠鏡、政策立案者の広角レンズを融合させる必要がある」",
@@ -172,7 +172,7 @@ export default function About() {
             </div>
             <div className="h-px w-16 bg-gray-300"></div>
           </div>
-          
+
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-medium mb-6 tracking-tight text-gray-900 inline-block relative">
               {t.title}
@@ -196,7 +196,7 @@ export default function About() {
                 />
               </div>
               <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white px-4 py-1 rounded-full text-xs font-medium text-primary border border-gray-100 shadow-sm">
-                {language === 'en' ? 'Since 2022' : '2022年設立'}
+                {language === "en" ? "Since 2022" : "2022年設立"}
               </div>
             </div>
           </div>
@@ -212,21 +212,27 @@ export default function About() {
               className="px-6 py-4 text-sm hover:bg-gray-50 transition duration-300 relative group"
             >
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-1 bg-primary group-hover:w-1/2 transition-all duration-300"></div>
-              <span className="font-medium text-gray-900">{t.institutionalTitle}</span>
+              <span className="font-medium text-gray-900">
+                {t.institutionalTitle}
+              </span>
             </Link>
             <Link
               href="#leadership"
               className="px-6 py-4 text-sm hover:bg-gray-50 transition duration-300 relative group"
             >
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-1 bg-primary group-hover:w-1/2 transition-all duration-300"></div>
-              <span className="font-medium text-gray-900">{t.leadershipTitle}</span>
+              <span className="font-medium text-gray-900">
+                {t.leadershipTitle}
+              </span>
             </Link>
             <Link
               href="#operational"
               className="px-6 py-4 text-sm hover:bg-gray-50 transition duration-300 relative group"
             >
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-1 bg-primary group-hover:w-1/2 transition-all duration-300"></div>
-              <span className="font-medium text-gray-900">{t.operationalTitle}</span>
+              <span className="font-medium text-gray-900">
+                {t.operationalTitle}
+              </span>
             </Link>
             <Link
               href="#brand"
@@ -253,12 +259,14 @@ export default function About() {
           {/* 日式装饰元素 */}
           <div className="absolute -left-4 top-10 w-16 h-16 bg-gray-100 rounded-sm transform rotate-45 opacity-20"></div>
           <div className="absolute -right-4 bottom-10 w-16 h-16 bg-gray-100 rounded-sm transform rotate-45 opacity-20"></div>
-          
+
           {/* 日式标题装饰 */}
           <div className="flex items-center justify-center mb-10">
             <div className="h-px w-12 bg-gray-300"></div>
             <div className="mx-3 px-6 py-2 border border-gray-200 text-center">
-              <h2 className="text-xl font-medium text-gray-900">{t.institutionalTitle}</h2>
+              <h2 className="text-xl font-medium text-gray-900">
+                {t.institutionalTitle}
+              </h2>
             </div>
             <div className="h-px w-12 bg-gray-300"></div>
           </div>
@@ -267,7 +275,7 @@ export default function About() {
             {/* 顶部装饰线 */}
             <div className="h-1 bg-gray-200"></div>
             <div className="absolute top-0 left-0 w-1/3 h-1 bg-primary"></div>
-            
+
             <div className="p-8 relative">
               {/* 背景水印 */}
               <div className="absolute right-8 top-8 opacity-5 pointer-events-none">
@@ -288,12 +296,18 @@ export default function About() {
                     <div className="p-6">
                       <div className="flex items-center mb-4">
                         <div className="w-8 h-8 flex items-center justify-center bg-gray-50 rounded-sm mr-3">
-                          <span className="text-primary text-lg font-light">N</span>
+                          <span className="text-primary text-lg font-light">
+                            N
+                          </span>
                         </div>
-                        <h3 className="text-lg font-medium text-gray-900">{t.name}</h3>
+                        <h3 className="text-lg font-medium text-gray-900">
+                          {t.name}
+                        </h3>
                       </div>
                       <div className="pl-11">
-                        <p className="text-gray-700 leading-relaxed">{t.nameContent}</p>
+                        <p className="text-gray-700 leading-relaxed">
+                          {t.nameContent}
+                        </p>
                       </div>
                       <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-500"></div>
                     </div>
@@ -305,12 +319,18 @@ export default function About() {
                     <div className="p-6">
                       <div className="flex items-center mb-4">
                         <div className="w-8 h-8 flex items-center justify-center bg-gray-50 rounded-sm mr-3">
-                          <span className="text-primary text-lg font-light">E</span>
+                          <span className="text-primary text-lg font-light">
+                            E
+                          </span>
                         </div>
-                        <h3 className="text-lg font-medium text-gray-900">{t.established}</h3>
+                        <h3 className="text-lg font-medium text-gray-900">
+                          {t.established}
+                        </h3>
                       </div>
                       <div className="pl-11">
-                        <p className="text-gray-700 leading-relaxed">{t.establishedContent}</p>
+                        <p className="text-gray-700 leading-relaxed">
+                          {t.establishedContent}
+                        </p>
                       </div>
                       <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-500"></div>
                     </div>
@@ -322,12 +342,18 @@ export default function About() {
                     <div className="p-6">
                       <div className="flex items-center mb-4">
                         <div className="w-8 h-8 flex items-center justify-center bg-gray-50 rounded-sm mr-3">
-                          <span className="text-primary text-lg font-light">S</span>
+                          <span className="text-primary text-lg font-light">
+                            S
+                          </span>
                         </div>
-                        <h3 className="text-lg font-medium text-gray-900">{t.supported}</h3>
+                        <h3 className="text-lg font-medium text-gray-900">
+                          {t.supported}
+                        </h3>
                       </div>
                       <div className="pl-11">
-                        <p className="text-gray-700 leading-relaxed">{t.supportedContent}</p>
+                        <p className="text-gray-700 leading-relaxed">
+                          {t.supportedContent}
+                        </p>
                       </div>
                       <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-500"></div>
                     </div>
@@ -340,32 +366,44 @@ export default function About() {
                     <div className="absolute top-0 right-0 w-1 h-full bg-primary opacity-70"></div>
                     <div className="p-6">
                       <div className="flex items-center mb-4 justify-between">
-                        <h3 className="text-lg font-medium text-gray-900">{t.mission}</h3>
+                        <h3 className="text-lg font-medium text-gray-900">
+                          {t.mission}
+                        </h3>
                         <div className="w-8 h-8 flex items-center justify-center bg-gray-50 rounded-sm">
-                          <span className="text-primary text-lg font-light">M</span>
+                          <span className="text-primary text-lg font-light">
+                            M
+                          </span>
                         </div>
                       </div>
-                      
+
                       <div className="mb-4">
-                        <p className="text-gray-700 leading-relaxed mb-4">{t.missionContent}</p>
-                        
+                        <p className="text-gray-700 leading-relaxed mb-4">
+                          {t.missionContent}
+                        </p>
+
                         {/* 日式列表设计 */}
                         <div className="border-t border-b border-gray-100 py-4 my-4">
                           <div className="flex items-center mb-3">
                             <div className="w-1.5 h-1.5 bg-primary mr-3"></div>
-                            <span className="text-gray-800">{t.challenge1}</span>
+                            <span className="text-gray-800">
+                              {t.challenge1}
+                            </span>
                           </div>
                           <div className="flex items-center mb-3">
                             <div className="w-1.5 h-1.5 bg-primary mr-3"></div>
-                            <span className="text-gray-800">{t.challenge2}</span>
+                            <span className="text-gray-800">
+                              {t.challenge2}
+                            </span>
                           </div>
                           <div className="flex items-center">
                             <div className="w-1.5 h-1.5 bg-primary mr-3"></div>
-                            <span className="text-gray-800">{t.challenge3}</span>
+                            <span className="text-gray-800">
+                              {t.challenge3}
+                            </span>
                           </div>
                         </div>
                       </div>
-                      
+
                       <div className="absolute bottom-0 right-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-500"></div>
                     </div>
                   </div>
@@ -375,21 +413,27 @@ export default function About() {
                     <div className="absolute top-0 right-0 w-1 h-full bg-primary opacity-70"></div>
                     <div className="p-6">
                       <div className="flex items-center mb-4 justify-between">
-                        <h3 className="text-lg font-medium text-gray-900">{t.coreFocus}</h3>
+                        <h3 className="text-lg font-medium text-gray-900">
+                          {t.coreFocus}
+                        </h3>
                         <div className="w-8 h-8 flex items-center justify-center bg-gray-50 rounded-sm">
-                          <span className="text-primary text-lg font-light">C</span>
+                          <span className="text-primary text-lg font-light">
+                            C
+                          </span>
                         </div>
                       </div>
-                      
+
                       <div>
                         <div className="relative">
                           <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-100"></div>
                           <div className="pl-6">
-                            <p className="text-gray-700 leading-relaxed">{t.coreFocusContent}</p>
+                            <p className="text-gray-700 leading-relaxed">
+                              {t.coreFocusContent}
+                            </p>
                           </div>
                         </div>
                       </div>
-                      
+
                       <div className="absolute bottom-0 right-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-500"></div>
                     </div>
                   </div>
